@@ -4,9 +4,9 @@ const userController = {};
 
 // GET - single user with all data except password
 userController.getUser = async (req, res, next) => {
-  const { userName } = req.query;
+  const { username } = req.query;
   try {
-    const fetchedUser = await User.findOne({ userName });
+    const fetchedUser = await User.findOne({ username });
     res.locals.user = fetchedUser;
     console.log('userController.getUser fetched user:', fetchedUser);
     return next();
@@ -21,7 +21,9 @@ userController.getUser = async (req, res, next) => {
 // POST - add new user
 userController.createUser = async (req, res, next) => {
   const { userName } = req.query;
-  const { password, email, preferences, zipCode } = req.body;
+  const {
+    password, email, preferences, zipCode,
+  } = req.body;
   try {
     console.log(userName, password);
     const newUser = await User.create({
