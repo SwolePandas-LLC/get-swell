@@ -39,9 +39,3 @@ Get Swell -- a social media app where users can connect, encourage each other to
 
 React, Node.js/Express, MongoDB/Mongoose, Cloudinary for image hosting
 
-## Team Responsibility breakdown: Who’s working on which part?
-
-1. Frontend - Moiz, Ivy, Bryan
-2. Backend - Meredith, Gayle, Bryan
-3. Scrum Master: Meredith
-4. Product Owner: Gayle
