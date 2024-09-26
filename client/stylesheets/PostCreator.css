@@ -1,28 +1,44 @@
 .postCreator {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  height: 150px;
+  width: 80%;
+  justify-content: center;
+
 }
 
 .post-input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-size: 16px;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 .post-button {
-    background-color: #647ead;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #647ead;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .post-button:hover {
-    background-color: #82a2df;
+  background-color: #82a2df;
+}
+
+.input-and-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }

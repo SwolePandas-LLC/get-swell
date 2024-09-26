@@ -70,6 +70,11 @@ function Post(props) {
 
   return (
     <div className="post" id={props.postInfo._id}>
+      <div className="topPost">
+        <b>
+          {props.postInfo.userID.username}
+        </b>
+      </div>
       <img src={props.postInfo.image || octopus} />
       <p>
         <b>Category: </b>
